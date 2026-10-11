@@ -101,4 +101,4 @@ The full change on top of Mesa is in `variant-Z.diff`: 13 files and about 1,350 
 - **[Tranquility6789](https://github.com/Tranquility6789/Turnip-A650-Patched-Drivers).** For documenting in public how the A650 was fixed.
 - **libadrenotools, [HomuHomu833](https://github.com/HomuHomu833/android-ndk-custom), chaotic-cx and the Eden team.** For the driver loader, the NDK, the Mesa mirror and the emulator.
 
-Device testing and direction: *[your name or alias]*. Analysis and code changes were AI-assisted (Claude, by Anthropic).
+Analysis and code changes were AI-assisted (Claude, by Anthropic).
