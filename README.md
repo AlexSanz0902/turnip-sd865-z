@@ -29,19 +29,19 @@ Games tested: *Link's Awakening*, *Super Mario Odyssey*, *Super Smash Bros. Ulti
 ### 1. Compressed mutable images
 
 - **Why:** on Adreno 6xx, Mesa makes images linear and uncompressed when they can be viewed with a different format. Emulators create nearly all their render targets that way, which is the most expensive way to use them on this GPU.
-- **How:** in `tu_image.cc` those images stay tiled and UBWC-compressed, including when they declare storage usage.
+- **How:** those images stay tiled and UBWC-compressed, including when they declare storage usage.
 - **Effect:** this change accounts for almost all of the gain.
 
 ### 2. Cheaper texture filtering
 
 - **Why:** texture sampling is costly on a GPU that is already at its limit.
-- **How:** in `tu_sampler.cc` anisotropic filtering is disabled, filtering between mip levels becomes "nearest", and 0.5 is added to the LOD bias.
+- **How:** anisotropic filtering is disabled, filtering between mip levels becomes "nearest", and 0.5 is added to the LOD bias.
 - **Cost:** distant or steeply angled textures are slightly less sharp. It can be turned off with the system property `debug.mesa.tu.sd865.texfast=0` (needs root or adb).
 
 ### 3. LRZ rescue
 
 - **Why:** LRZ rejects hidden pixels before they are shaded. Mesa turns it off when depth is cleared with `vkCmdClearAttachments`, which is exactly how emulators clear, so it never became active.
-- **How:** in `tu_lrz.cc`, if that clear is the first thing in the render pass and covers the whole image, it is treated as a pass that starts with a clear and LRZ stays valid.
+- **How:** if that clear is the first thing in the render pass and covers the whole image, it is treated as a pass that starts with a clear and LRZ stays valid.
 - **Effect:** +1.3 % measured at 1.25x scale.
 
 ### 4. Build tuned for the SoC
@@ -56,12 +56,12 @@ Both come from what the community already uses on Adreno 6xx. They were added to
 ### 5. Direct rendering only
 
 - **Why:** community builds for A6xx never use tiled rendering (GMEM). On this device, forcing it was also 2 to 3 times slower.
-- **How:** in `tu_cmd_buffer.cc` direct rendering ("sysmem") is always used and the automatic selector is ignored.
+- **How:** direct rendering ("sysmem") is always used and the automatic selector is ignored.
 
 ### 6. Safe image-to-buffer readback
 
 - **Why:** the NetherSX2-Turnip team linked SD865 reboots to reading compressed images back into a buffer.
-- **How:** in `tu_clear_blit.cc`, before every `vkCmdCopyImageToBuffer` all GPU caches are flushed and the GPU is waited on until idle; the same is done after the copy.
+- **How:** before every `vkCmdCopyImageToBuffer` all GPU caches are flushed and the GPU is waited on until idle; the same is done after the copy.
 - **Cost:** none measurable. It happens 2–3 times per frame.
 
 ## Things to know
