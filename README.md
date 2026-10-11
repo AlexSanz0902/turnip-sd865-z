@@ -86,10 +86,6 @@ SHA-256 of the zip: `965ff72efae4a5db2918aecbd42a7cf1bd5b35d2100a4986389f152227a
 
 Open an issue with the game, the resolution scale, what happened, and the `turnip_sd865.txt` file from that session.
 
-## Source
-
-The full change on top of Mesa is in `variant-Z.diff`: 13 files and about 1,350 lines, under the same MIT license as Mesa. `tu_sd865_defaults.h` holds the default values the build uses. The build scripts are not included yet.
-
 ## Credits
 
 - **The Mesa project and the freedreno and Turnip developers.** The driver is theirs; this is 1,350 lines on top of their work.
