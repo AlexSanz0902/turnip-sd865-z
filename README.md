@@ -2,7 +2,6 @@
 
 Modified Mesa Turnip Vulkan driver focused on boosting emulation performance and stability across Adreno GPUs — primarily A6xx, with secondary support for A7xx.
 
-## Benchmarks
 
 ## FAQ
 
@@ -29,3 +28,10 @@ Primarily developed for the **Adreno A6xx** architecture, with secondary support
 | 🟡 | **Vita3k / WatermelonDS / HakuX / WinNative** | Compatible; Needs more testing to move to 🟢 status. |
 | 🟠 | **ARMSX3 / Cemu / Dolphin** | Lightly tested; Titles may exhibit rendering glitches. |
 | ⚪ | **Winlator / Gamehub / Other Windows Compatibility Layers** | Untested on current builds. |
+
+## Credits
+
+Thanks to the Mesa project, the freedreno/Turnip developers, StevenMXZ, the Eden team, Weab-chan, K11MCH1, MrPurple666, The412Banner, nckstwrt, the NetherSX2-Turnip team, Tranquility6789, libadrenotools, HomuHomu833 and chaotic-cx.
+
+Analysis and code changes were AI-assisted (Claude by Anthropic).
+
