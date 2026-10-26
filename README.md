@@ -16,7 +16,7 @@ Primarily developed for the **Adreno A6xx** architecture, with secondary support
 | 🟢🟢 | **Primary (Tested)** | **Adreno 650** | Snapdragon 865, 865+, 870 | Retroid Pocket 5, RP Mini, RP Flip 2, AYN Thor Lite, etc. |
 | 🟢 | **Primary (General)** | **Adreno A6xx** | Snapdragon 845, 855, 860, 888, 7c+, etc.
 | 🟡 | **Secondary** | **Adreno A7xx (Gen 1/2)** | Snapdragon 8 Gen 1/2, 7+ Gen 2 | AYN Thor, AYN Odin 2, Retroid Pocket 6 |
-| ⚪ | **Secondary (Untested)** | **Adreno A7xx (Gen 3 / G3x)** | Snapdragon 8 Gen 3, 8s Gen 3, G3x Gen 2
+| 🟠 | **Secondary (Needs more testing)** | **Adreno A7xx (Gen 3 / G3x)** | Snapdragon 8 Gen 3, 8s Gen 3, G3x Gen 2
 | 🔴 | **Unsupported** | **Adreno A8xx  / Others** | Snapdragon 8 Elite, SD 835, Mali, Xclipse
 
 ### Emulator Compatibility
