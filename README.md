@@ -7,7 +7,7 @@ Modified Mesa Turnip Vulkan driver focused on boosting emulation performance and
 ## FAQ
 
 **Status Legend:**
-🟢🟢 Optimal | 🟢 Compatible | 🟡 Compatible, needs more testing | 🟠 Lightly Tested, experimental support | 🔴 Unsupported / Broken | ⚪ Untested
+🟢🟢 Optimal | 🟢 Compatible | 🟡 Secondary support or needs more testing | 🟠 Lightly Tested or experimental support | 🔴 Unsupported or broken | ⚪ Untested
 
 ### Device Compatibility
 Primarily developed for the **Adreno A6xx** architecture, with secondary support for **A7xx**.
