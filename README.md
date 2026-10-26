@@ -22,8 +22,10 @@ Primarily developed for the **Adreno A6xx** architecture, with secondary support
 
 ### Emulator Compatibility
 
-- 🟢🟢 **Eden / Eden Nightly / Citron / Other Yuzu Forks:** Fully supported; primary target for Switch emulation optimizations.
-- 🟢 **ARMSX2 / Azahar (and other Citra forks):** Compatible; stable performance and minor rendering issues.
-- 🟡 **Vita3k / WatermelonDS / HakuX / WinNative:** Compatible; Needs more testing to move to 🟢 status.
-- 🟠 **ARMSX3 / Cemu / Dolphin:** Lightly tested; Titles may exhibit rendering glitches.
-- ⚪ **Winlator / Gamehub / Other Windows Compatibility Layers:** Untested on current builds.
+| Status | Emulator | Compatibility / Notes |
+| :---: | :--- | :--- |
+| 🟢🟢 | **Eden / Eden Nightly / Citron / Other Yuzu Forks** | Fully supported; primary target for Switch emulation optimizations. |
+| 🟢 | **ARMSX2 / Azahar (and other Citra forks)** | Compatible; stable performance and minor rendering issues. |
+| 🟡 | **Vita3k / WatermelonDS / HakuX / WinNative** | Compatible; Needs more testing to move to 🟢 status. |
+| 🟠 | **ARMSX3 / Cemu / Dolphin** | Lightly tested; Titles may exhibit rendering glitches. |
+| ⚪ | **Winlator / Gamehub / Other Windows Compatibility Layers** | Untested on current builds. |
